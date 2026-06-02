@@ -92,7 +92,7 @@ const Bookdoctor = ({ doctor }) => {
                                         className="p-10 space-y-8 w-full "
                                     >
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                            {/* Destination Name */}
+                                            
                                             <div className="md:col-span-2">
                                                 <TextField  isRequired>
                                                     <Label>Dr. Name</Label>
@@ -101,17 +101,17 @@ const Bookdoctor = ({ doctor }) => {
                                                 </TextField>
                                             </div>
 
-                                            {/* Country */}
+                                            
                                             <TextField  isRequired>
                                                 <Label>Patient Name</Label>
                                                 <Input placeholder="Happy akther" name="patientname" className="rounded-2xl" />
                                                 <FieldError />
                                             </TextField>
 
-                                            {/* Category - Updated Select Component */}
+                                            
 
 
-                                            {/* Price */}
+                                            
                                             <TextField  type="tel" isRequired>
                                                 <Label>phone</Label>
                                                 <Input
@@ -123,7 +123,7 @@ const Bookdoctor = ({ doctor }) => {
                                                 <FieldError />
                                             </TextField>
 
-                                            {/* Duration */}
+                                            
                                             <TextField  isRequired>
                                                 <Label>gender</Label>
                                                 <Input
@@ -135,7 +135,7 @@ const Bookdoctor = ({ doctor }) => {
                                             </TextField>
 
 
-                                            {/* Departure Date */}
+                                            
                                             <div className="md:col-span-2">
                                                 <TextField  type="date" isRequired>
                                                     <Label>appointment Date</Label>
@@ -144,7 +144,7 @@ const Bookdoctor = ({ doctor }) => {
                                                 </TextField>
                                             </div>
 
-                                            {/* Image URL - Removed preview */}
+                                            
                                             <div className="md:col-span-2">
                                                 <TextField  type="time" isRequired>
                                                     <Label>appointment Time</Label>
@@ -153,7 +153,7 @@ const Bookdoctor = ({ doctor }) => {
                                                 </TextField>
                                             </div>
 
-                                            {/* Description */}
+                                            
                                             <div className="md:col-span-2">
 
                                             </div>
