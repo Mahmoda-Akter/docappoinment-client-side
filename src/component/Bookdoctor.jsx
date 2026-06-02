@@ -48,11 +48,13 @@ const Bookdoctor = ({ doctor }) => {
             appointmenttime: from.appointmenttime.value,
 
         }
-
+        const {data:token}=await authClient.token()
+        console.log(token)
         const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/booking`, {
             method: 'POST',
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+                authorization:`Bearer ${token.token}`
             },
             body: JSON.stringify(bookingdata)
         })

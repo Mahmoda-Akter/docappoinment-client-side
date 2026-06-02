@@ -4,15 +4,18 @@ import {AlertDialog, Button} from "@heroui/react";
 import { MdOutlineDelete } from "react-icons/md";
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
+import { authClient } from '@/lib/auth-client';
 
 const Deletebooking = ({bookingid}) => {
     const router=useRouter()
 
     const handeldeletebooking=async()=>{
+        const {data:token}=await authClient.token()
         const res=await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/booking/${bookingid}`,{
             method:'DELETE',
             headers:{
-                'content-type':'application/json'
+                'content-type':'application/json',
+                authorization:`Bearer ${token.token}`
             },
             
         })

@@ -15,13 +15,22 @@ export const metadata={
 }
 
 const Mybookingpage = async () => {
+
+    const {token}=await auth.api.getToken({
+            headers:await headers()
+        })
+
     const session = await auth.api.getSession({
         headers: await headers() // you need to pass the headers object.
 
     })
     const user = session?.user
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/booking/${user?.id}`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/booking/${user?.id}`, {
+        headers:{
+            authorization:`Bearer ${token}`
+        }
+    })
     const userinfo = await res.json()
     console.log(userinfo)
     return (
