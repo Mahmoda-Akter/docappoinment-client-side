@@ -1,5 +1,6 @@
 'use client'
 import Doctorcard from '@/component/Doctorcard';
+import { authClient } from '@/lib/auth-client';
 import React, { useEffect, useState } from 'react';
 
 const Allappoinmentpage = () => {
@@ -8,7 +9,12 @@ const Allappoinmentpage = () => {
 
     useEffect(() => {
         const fetchdata = async () => {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/appoinment`)
+            const {token}=await authClient.token()
+            const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/appoinment`,{
+                headers:{
+                    authorization:`Bearer ${token}`
+                }
+            })
             const alldoctor = await res.json()
             setalldoctors(alldoctor)
         }

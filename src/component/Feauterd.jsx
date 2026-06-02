@@ -1,7 +1,13 @@
 import React from 'react';
 import Doctorcard from './Doctorcard';
+import { auth } from '@/lib/auth';
+import { headers } from 'next/headers';
 
 const Feauterd = async () => {
+
+    // const { token } = await auth.api.getToken({
+    //     headers: await headers()
+    // })
     const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/feauterd`)
     const data = await res.json()
     console.log(data)
