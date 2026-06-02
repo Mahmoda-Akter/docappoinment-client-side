@@ -22,7 +22,7 @@ const Deletebooking = ({bookingid}) => {
         const data=await res.json()
         toast.success('You delete it successfully')
         router.refresh()
-        // console.log(data)
+       
         
         
     }

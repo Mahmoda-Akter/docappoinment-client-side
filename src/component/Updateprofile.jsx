@@ -8,8 +8,7 @@ const Updateprofile = () => {
         e.preventDefault()
         const name = e.target.name.value
         const url = e.target.url.value
-        // console.log(name)
-        // console.log(url)
+        
         await authClient.updateUser({
             name,
             image:url
