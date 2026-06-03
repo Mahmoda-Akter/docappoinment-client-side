@@ -28,5 +28,6 @@ Technology Used
     7. Better auth client
     8. node.js
     9.Express.js
+    10. JWT authenticatin
 
 
