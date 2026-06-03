@@ -41,7 +41,7 @@ const Bookappoinment = () => {
                 className="p-10 space-y-8 w-3xl bg-slate-100"
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Destination Name */}
+                    
                     <div className="md:col-span-2">
                         <TextField name="name" isRequired>
                             <Label>Name</Label>
@@ -50,14 +50,14 @@ const Bookappoinment = () => {
                         </TextField>
                     </div>
 
-                    {/* Country */}
+                    
                     <TextField name="hospital" isRequired>
                         <Label>hospital</Label>
                         <Input placeholder="Labaid Cardiac Hospital" className="rounded-2xl" />
                         <FieldError />
                     </TextField>
 
-                    {/* Category - Updated Select Component */}
+                    
                     <div>
                         <Select
                             name="specialty"
@@ -101,7 +101,7 @@ const Bookappoinment = () => {
                         </Select>
                     </div>
 
-                    {/* Price */}
+                    
                     <TextField name="fee" type="number" isRequired>
                         <Label>fee</Label>
                         <Input
@@ -112,7 +112,7 @@ const Bookappoinment = () => {
                         <FieldError />
                     </TextField>
 
-                    {/* Duration */}
+                    
                     <TextField name="location" isRequired>
                         <Label>location</Label>
                         <Input
@@ -130,7 +130,7 @@ const Bookappoinment = () => {
                         <FieldError />
                     </TextField>
 
-                    {/* Departure Date */}
+                   
                     <div className="md:col-span-2">
                         <TextField name="departureDate" type="date" isRequired>
                             <Label>Departure Date</Label>
@@ -139,7 +139,7 @@ const Bookappoinment = () => {
                         </TextField>
                     </div>
 
-                    {/* Image URL - Removed preview */}
+                   
                     <div className="md:col-span-2">
                         <TextField name="imageUrl" isRequired>
                             <Label>Iimage</Label>
@@ -152,7 +152,7 @@ const Bookappoinment = () => {
                         </TextField>
                     </div>
 
-                    {/* Description */}
+                    
                     <div className="md:col-span-2">
                         <TextField name="description" isRequired>
                             <Label>Description</Label>
@@ -165,7 +165,7 @@ const Bookappoinment = () => {
                     </div>
                 </div>
 
-                {/* Buttons */}
+                
 
                 <Button
                     type="submit"
