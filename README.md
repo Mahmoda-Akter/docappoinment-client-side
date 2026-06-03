@@ -15,3 +15,17 @@ Key Fautured:
     5. User can update and delete their booking and profile
     6. User search doctors by name.
     7. This website is fully responsive for all device.
+
+
+Technology Used
+
+    1. Next.js
+    2. React.js
+    3. Tailwind.css
+    4. HeroUi
+    5. DisyUi
+    6. React toast
+    7. Better auth client
+    8. node.js
+
+
