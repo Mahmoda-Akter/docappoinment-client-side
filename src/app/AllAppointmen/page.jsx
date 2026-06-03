@@ -28,8 +28,9 @@ const Allappoinmentpage = () => {
     const filterdoctor = alldoctors.filter(filterdoctor => filterdoctor.name.toLowerCase().includes(search.toLowerCase()))
     return (
         <div className='w-full max-w-5xl mx-auto px-4 mt-10'>
+            <h1 className='text-center text-xl md:text-2xl lg:text-3xl font-bold'>All Appointment</h1>
             <input
-                className='input input-bordered w-full max-w-sm mb-6'
+                className='input input-bordered w-full max-w-sm mb-6 mt-5'
                 type='text'
                 placeholder='Search here......'
                 value={search}

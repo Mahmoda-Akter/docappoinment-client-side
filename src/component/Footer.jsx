@@ -1,9 +1,21 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
     return (
         <div className='mt-10'>
             <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+                <div className='flex items-center gap-1'>
+                    <Image
+                        src='https://brandforma.com/wp-content/uploads/2024/03/medical-doctor-logo-for-sale.png'
+                        alt="doctor logo"
+                        width={60}
+                        height={60}
+                    />
+
+
+                    <a className=" text-xl">DocAppoint</a>
+                </div>
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>

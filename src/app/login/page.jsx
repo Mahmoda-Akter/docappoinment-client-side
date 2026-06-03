@@ -62,15 +62,18 @@ const Loginpage = () => {
                     </TextField>
                     <TextField
                         isRequired
-                        minLength={8}
+                        minLength={6}
                         name="password"
                         type="password"
                         validate={(value) => {
-                            if (value.length < 8) {
-                                return "Password must be at least 8 characters";
+                            if (value.length < 6) {
+                                return "Password must be at least 6 characters";
                             }
                             if (!/[A-Z]/.test(value)) {
                                 return "Password must contain at least one uppercase letter";
+                            }
+                            if (!/[a-z]/.test(value)) {
+                                return "Password must contain at least one lowercase letter";
                             }
                             if (!/[0-9]/.test(value)) {
                                 return "Password must contain at least one number";
@@ -80,7 +83,7 @@ const Loginpage = () => {
                     >
                         <Label>Password</Label>
                         <Input placeholder="Enter your password" />
-                        <Description>Must be at least 8 characters with 1 uppercase and 1 number</Description>
+                        <Description>Must be at least 6 characters with 1 uppercase, 1 lowercase and 1 number</Description>
                         <FieldError />
                     </TextField>
                     <div className="flex justify-center gap-2">

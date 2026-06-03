@@ -4,7 +4,7 @@ A modern and user friendly websit where patient can brows doctors and view detai
 and can book appoinment safely.
 
 
-LIVE LINK:
+LIVE LINK: https://docappoint-rho.vercel.app
 
 Key Fautured:
 
