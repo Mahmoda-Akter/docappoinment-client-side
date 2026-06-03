@@ -29,5 +29,6 @@ Technology Used
     8. node.js
     9.Express.js
     10. JWT authenticatin
+    11. Mongodb
 
 
