@@ -54,7 +54,7 @@ const Navber = () => {
                         <li> <Link href={"/"}>Home</Link></li>
                         <li><Link href={"/AllAppointmen"}>All Appointmen</Link></li>
                         <li><Link href={"/Dashboard"}>Dashboard</Link></li>
-                        <li><Link href={"/Addappoinment"}>Addappoinment</Link></li>
+                        {/* <li><Link href={"/Addappoinment"}>Addappoinment</Link></li> */}
                     </ul>
                 </div>
                 <div className="navbar-end gap-2">
