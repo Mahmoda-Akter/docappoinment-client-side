@@ -1,12 +1,15 @@
+
 import Updateprofile from '@/component/Updateprofile';
 import { auth } from '@/lib/auth';
 import { Card } from '@heroui/react';
 import { headers } from 'next/headers';
+
 import React from 'react';
 
 export const metadata = {
     title: "My profile"
 }
+
 
 const profilepage = async () => {
 

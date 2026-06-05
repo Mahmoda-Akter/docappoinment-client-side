@@ -1,18 +1,31 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
+import { useRouter } from 'next/navigation';
+
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Updateprofile = () => {
+    const route=useRouter()
 
-    const updateprofile = async(e) => {
+    const updateprofile = async (e) => {
         e.preventDefault()
         const name = e.target.name.value
         const url = e.target.url.value
+
         
-        await authClient.updateUser({
-            name,
-            image:url
-        })
+        try {
+            await authClient.updateUser({
+                name,
+                image: url
+            })
+            toast.success("profile update successfully")
+            route.refresh()
+
+
+        } catch (error) {
+           toast.error("Something is wrong") 
+        }
     }
     return (
         <div>
